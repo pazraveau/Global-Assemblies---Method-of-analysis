@@ -50,7 +50,9 @@ Hence, here we calculate only the semantic coherence to perform the topic diagno
 
 This is done by running the LDA model for different numbers of topics and for each case, calculating the semantic coherence.
 
-![image.png](attachment:c69c458e-91d4-4643-8fea-2b79006bbb80.png)!
+
+<img width="452" height="299" alt="image" src="https://github.com/user-attachments/assets/eb2c7e87-a999-4791-ba6f-b5f18093c0af" />
+
 
 ### 1.3 LDA model
 
