@@ -30,6 +30,8 @@ MONITO
 
 ## 1. Topic  Modeling
 
+The first step in the analysis is a description of the content, for which we will use Topic Modeling. The model takes the "actions," that is, the texts that describe the conclusions of each dialogue.
+
 ### 1.1 Preprocessing
 
 Data preprocessing depends on the technique used. In this case, we use Latent Dirichlet Allocation (LDA), therefore, the preprocessing is like in any Bag of Words (BoW) technique: 
@@ -56,12 +58,14 @@ This is done by running the LDA model for different numbers of topics and for ea
 
 ### 1.3 LDA model
 
+According to Figure, we choose 6 topics for an LDA model with Tf-IDF matrix.
+
 The output for an LDA model consists of two matrices: 
 
 (a) Theta: dataframe with the distribution of documents by topics <br>
 (b) Beta: dataframe with the distribution of topics by words  <br>
 
-To evaluate the LDA model, we will look at (a) 10 most probable words (or bigrams) of the topic, the 10 words with the highest FREX scores, and the 10 most representative documents of the topic (the ones with the highest score in Theta).
+To evaluate the LDA model, we will look at 10 most probable words (or bigrams) of the topic, and the 10 words with the highest FREX scores.
 
 
 | Topic | Highest Prob. Words | Frex Words |
@@ -73,10 +77,13 @@ To evaluate the LDA model, we will look at (a) 10 most probable words (or bigram
 | 4  | agriculture, initiative, global, produce, provide, promote, income, production, low, food  | neighborhood, carbon, carbon_tax, tax, urban_agriculture, foster, integrate, dense, aquaponics, self  |
 | 5  | water, food, access, ensure, program, sustainable, face, climate, agricultural, change  | exchange_knowledge, access_affordable, especially, health, scarcity, run, sovereignty, empower, training, water  |
 
+The topic interpretation will rely on these lists of words, as well as the most representative documents of the topic (the ones with the highest score in Theta). A good model will be one whose topics can be interpreted. 
+
+Based on our results, the following topic labeling is proposed: 
 
 Topic 0: Sharing knowledge (also about energy) <br>
 Topic 1: Seed banks and crop varieties <br>
-Topic 2: ¿? <br>
+Topic 2: (unable to label) <br>
 Topic 3: Food and agricultural practices in climate change <br>
 Topic 4: Food production <br>
 Topic 5: Food and water security in the face of climate change <br>
@@ -85,4 +92,22 @@ Notes:
 
 + The results may vary greatly when changing the seed, specially for small corpus. Try chaging the seed to improve results.  
 + When the entries look very similar, the topics are best differentiated using an LDA- TfIDF. However, this can distort the actual weight of the topics in the corpus. 
-+ If LDA partition looks odd, evaluate using a qualitative labeling and subsequent classification algorithm. In which case, the codes for the other tasks would still be useful, and the LDA-based codes will need adjustment. 
++ Beyond looking at the most probable words and documents per topic, the Beta and Theta matrices allow us to examine the specific weights, in order to test whether specific words carry too much weight in the topic and also in the topic proportion.
++ If LDA partition looks odd, evaluate using a qualitative labeling and subsequent classification algorithm. In which case, the codes for the other tasks would still be useful, and the LDA-based codes will need adjustment.
+
+### 1.4 Topic proportion
+
+Next, we may want to know how important each topic is. This can be done with Theta matrix, which returns the topic distribution per document, in two ways: 
+
+(a)  calculating the topic proportion on the whole corpus by summing Theta column-wise. This will return a decimal number between 0 and 1 for each topic (the topic “weight”). <br>
+
+
+| Topic | Propotion | 
+| :----------- | :------------ | 
+|0	|0.1894433|
+|1	|0.13656229|
+|2	|0.11648715|
+|3	|0.1371431|
+|4	|0.18208739|
+|5	|0.23827669|
+
