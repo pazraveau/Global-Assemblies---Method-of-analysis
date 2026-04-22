@@ -111,3 +111,21 @@ Next, we may want to know how important each topic is. This can be done with The
 |4	|0.18208739|
 |5	|0.23827669|
 
+(b) counting the number of documents in which a given topic is more probable. 
+
+|Topic | Count|
+| :----------- | :------------ | 
+|0|	86|
+|1|	56|
+|2|	45|
+|3|	56|
+|4|	82|
+|5|	114|
+
+
+Any of these methods can be used to observe the topic importance, for example, in time.
+
+<img width="552" height="394" alt="image" src="https://github.com/user-attachments/assets/81308de6-c675-45f3-9600-ddff6f6e0f97" />
+
+
+
