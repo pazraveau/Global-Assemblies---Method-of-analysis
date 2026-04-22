@@ -127,5 +127,29 @@ Any of these methods can be used to observe the topic importance, for example, i
 
 <img width="552" height="394" alt="image" src="https://github.com/user-attachments/assets/81308de6-c675-45f3-9600-ddff6f6e0f97" />
 
+### 1.5 What is behind topic proportion?
 
+We fit an OLS model on each column on theta columns (e.g., one OLS model per topic), aiming to explain the topic proportion on documents. As independent variables, we will use the type of assembly organizer (org_type), fixed effect by continent (continent), and vulnerability index (vulnerability) of the country in which the assembly was held (from https://gain.nd.edu/our-work/country-index/) .
+
+The variables “continent” and “org_type” are categorical, and the reference categories were set to “Europe” and “Local Government”, respectively. 
+Results: (the constant term of the regression was omitted)
+
+|Topic 0||
+|:--|:--|
+|org_type: Community Based Organization|	0.145770|
+|org_type: Social Movement| 	 0.205705|
+
+|Topic 1||
+|:--|:--|
+|continent: America|	 0.114585|
+   
+|Topic 2||
+|:--|:--|
+|org_type: Social Movement|  	-0.141911|
+ 
+|Topic 4||
+|:--|:--|
+|continent: America| 	-0.148936|
+
+Note: OLS models for Topic 3 and Topic 5 show no significant results
 
