@@ -168,4 +168,58 @@ For example, Figure 4 shows the cities in which the Amazon is mentioned. The map
 <img width="777" height="303" alt="image" src="https://github.com/user-attachments/assets/f11be38e-ce66-4460-8f2c-c33466c907df" />
 
 
+## 3. Identification of vulnerable groups
 
+Identifying references to vulnerable groups begins by establishing categories and a set of terms associated with each one.
+
+|Label	 |Words in seed-dictionary|
+|:-- | :-- |
+|African|	african, black, afro, kushite, nubian, pardo, mulatto, creole, garifuna|
+|Indigenous|	indigenous, aboriginal, native, tribe, māori, inuit, sami, mapuche, aymara, quechua, guarani, ashaninka, yanomami, tikuna, huichol, zapotec, mixtec, nahua, otomí, maya, mayan, purépecha, wixarika, hopi, cherokee, lakota, navajo, apache, zuni, iroquois, autochthonous, tlaxcaltec, tsotsil, tzeltal, tzotzil, mazahua, mazatec, tzotzil, omagua, chickasaw, choctaw, cree, anishinaabe, wampanoag, nanticoke, lenape, algonquin, kwakwaka, wakw, mi'kmaq, nuu-chah-nulth, tongva, yurok, kumeyaay, huave, yaqui, seri, tarahumara, taroko, aeta, ifugao, dayak, batak, pemon, embu, gikuyu, zarma, mbundu, bamileke, herero|
+|Roma|	romani, gypsy, gipsy, sinti, gitano, calé|
+|Minorities|	jewish, jews, muslim, muslims, islamic, islamists, assyrian, buddhist, hindus, sikhs, yazidi, kurds, kurdish, ahmadiyya, zoroastrian, bahai, shia, sunni, druze, copti, uighur, uigurs, hazaras, tatars, circassian, baloch, rohingya, hazaragi, igbo, yoruba, zulu, xhosa, tigray, tutsi, hutu, berber, amazigh, tuareg, basque, catalan, galician, breton, sami, hmong, tibetan, karen, shan, acehnese, chaldean, aramaean, assyrian, syriac, comorian, javanese, sundane|
+|Migrants|	migrant, migrants, expat, foreign, noncitizen, migration, deportation'|
+|Displaced|	refugee, displaced, asylum, exile, exiles, asylee, returnee|
+|Poverty|	poverty, destitute, impoverished, poor, homeless, unhoused, houseless, roofless, squatters, favelado, starving, malnourished, hungry, underclass|
+|Women|	woman, girl, female, feminine, femme, mother, feminist, feminism|
+|LQBTQ|	lgbt, lgbtq, lgbtqi, lgbtq+, lesbian, gay, bisexual, transgender, trans, queer, asexual, pansexual, demisexual, genderqueer, agender, bigender, transwoman, transman, sapphic, polyamorous, homosexual, cisgender|
+
+We tested two approaches, the first one consisted on searching the words of each category in the actions. Table XX shows the number of words present in the dataset, as well as some of the actual words. 
+
+|Label | count | words|
+|:-- | --: | :-- |
+|African 	|0||
+|Indigenous |	19| 	indigenous, native, indigenous, indigenous…|
+|Roma |	0||
+|Minorities| 	1| ethnic minorities|
+|Migrants 	|2| migrant, migrants|
+|Displaced 	|4| refugees, refugee, refugees, refugees|
+|Poverty 	|68| low-income, malnourished, impoverished…|
+|Women 	|24|  mothers, widows, pregnant women, women…|
+|Lgbtqi 	|0||
+
+The second option involves combining the set of words per category (the dictionary) with an embedding model. The embedding model, trained on a large, general-purpose corpus, should capture words similar, even if they are not included in the dictionary. The implementation presented here used a Word2Vec model (GoogleNews-vectors-negative300.bin) and calculates the cosine similarity between the embedding vector of each word in the action and the embedding vector of each word in the category. The resulting score corresponds to the maximum cosine similarity obtained (a possible variation would involve comparing the average embeddings of the words in the action and in the category).
+
+Example : 
+
+“Establish knowledge-sharing partnerships with communities transitioning from fossil fuels, like coal towns in Appalachia or oil workers in Nigeria, to exchange ideas and strategies for building resilient post-extractive economies.”		
+
+The following table shows the result for this “action”. The third and fourth row show the word in the dictionary and the “action”, respectively, for which the cosine similarity was the highest. Note that many proper nouns or location names are not included in the model's vocabulary, for example, Appalachia and Nigeria. Also, compound words are also not included in the model's vocabulary; they would need to be preprocessed if you wanted to separate them, although this would change the meaning.	
+
+|AFRICAN|	INDIGENOUS|	ROMA|	MINORITIES|	MIGRANTS|	DISPLACED|	POVERTY|	WOMEN|	LGBTQI|
+|:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:---|
+|0.5687768|	0.36864054	|0.19463305	|0.60938865	|0.39933679	|0.28370056	|0.3515791	|0.24430211	|0.2622174|
+|Africa|	Cherokee|	Gipsy|	Igbo|	migrants|	displaced|	impoverished|	women|	lgbt|
+|Nigeria	|Appalachia	|Appalachia	|Nigeria	|workers	|workers	|Appalachia	|workers	|communities|
+
+Only “AFRICAN” and “MINORITIES” categories score above 0.5, and it seems to make sense (although Cherokee with Appalachia are a good match too, maybe a lower threshold for the first four categories). 
+
+Now, let us take the category "Poverty". The words in category “Poverty” are: 'poverty', 'destitute', 'impoverished', 'poor', 'homeless', 'unhoused', 'houseless', 'roofless', 'squatters', 'starving', 'malnourished', 'hungry', 'underclass'
+
+If we search for the highest score actions, all cases where the action contains a word that is included in the dictionary, will have a score equal to 1. In these cases, then, the results are equivalent to the previous approach: all the actions scoring 1, will include a word of the category, as in the sentence: 'Establish a mobile health clinic program to provide accessible nutrition education, health screenings, and mental health support for **homeless** individuals and families in temporary accommodations.'
+
+However, the following example show the benefits of the embedding approoach: 
+
+'Implement a subsidized, nutrient-dense school meal program sourced from local farmers to combat malnutrition and support vulnerable children from low-income families.'
+
+in this case, the action contains no dictionary word, but the similarity is still high (0.685364). Thus, this approach allow us to evaluate the match between the action and each category, even when no word of the category is contained in the action. 
