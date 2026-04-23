@@ -26,6 +26,7 @@ Example: "The community assembly participants could provide support, resources, 
 
 Example: "Two months on, the Potters Village farmers' market is thriving. Held every Saturday, it features 20 local farmers selling fresh produce, baked goods, and artisanal crafts. Community volunteers help with setup and promotion. Attendance has doubled since opening day, bolstering the local economy and food security."
 
+*Figure 1: Number of dialogues per country in the artifitial dataset used for this tutrial*
 <img width="871" height="342" alt="image" src="https://github.com/user-attachments/assets/f3d219e2-9bb7-4810-b050-e4c411879c06" />
 
 ## 1. Topic  Modeling
@@ -52,13 +53,13 @@ Hence, here we calculate only the semantic coherence to perform the topic diagno
 
 This is done by running the LDA model for different numbers of topics and for each case, calculating the semantic coherence.
 
-
+*Figure 2: Topic diagnosis.*
 <img width="452" height="299" alt="image" src="https://github.com/user-attachments/assets/eb2c7e87-a999-4791-ba6f-b5f18093c0af" />
 
 
 ### 1.3 LDA model
 
-According to Figure, we choose 6 topics for an LDA model with Tf-IDF matrix.
+According to Figure 2, we choose 6 topics for an LDA model with Tf-IDF matrix.
 
 The output for an LDA model consists of two matrices: 
 
@@ -125,6 +126,7 @@ Next, we may want to know how important each topic is. This can be done with The
 
 Any of these methods can be used to observe the topic importance, for example, in time.
 
+*Figure 3: Monthly variation of topic importance*
 <img width="552" height="394" alt="image" src="https://github.com/user-attachments/assets/81308de6-c675-45f3-9600-ddff6f6e0f97" />
 
 ### 1.5 What is behind topic proportion?
@@ -160,6 +162,7 @@ To do this, we will use Name Entity Recognition (NER), a tool provided by the St
 
 The geopy package (https://pypi.org/project/geopy/) provides us with the coordinates of the places found and allows us to calculate the distances between them.
 
+*Figure 4: Places in which the Amazon is mentioned (red dots). The Amazon is signalizedby the green dot.*
 <img width="777" height="303" alt="image" src="https://github.com/user-attachments/assets/f11be38e-ce66-4460-8f2c-c33466c907df" />
 
 
