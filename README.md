@@ -26,7 +26,7 @@ Example: "The community assembly participants could provide support, resources, 
 
 Example: "Two months on, the Potters Village farmers' market is thriving. Held every Saturday, it features 20 local farmers selling fresh produce, baked goods, and artisanal crafts. Community volunteers help with setup and promotion. Attendance has doubled since opening day, bolstering the local economy and food security."
 
-*Figure 1: Number of dialogues per country in the artifitial dataset used for this tutrial*
+*Figure 1: Number of dialogues per country in the artificial dataset used for this tutrial*
 <img width="871" height="342" alt="image" src="https://github.com/user-attachments/assets/f3d219e2-9bb7-4810-b050-e4c411879c06" />
 
 ## 1. Topic  Modeling
@@ -162,7 +162,9 @@ To do this, we will use Name Entity Recognition (NER), a tool provided by the St
 
 The geopy package (https://pypi.org/project/geopy/) provides us with the coordinates of the places found and allows us to calculate the distances between them.
 
-*Figure 4: Places in which the Amazon is mentioned (red dots). The Amazon is signalizedby the green dot.*
+For example, Figure 4 shows the cities in which the Amazon is mentioned. The map also shows the Amazon as a green dot (although it is a large region, the geopy package provides a single coordinate).
+
+*Figure 4: Places in which the Amazon is mentioned (red dots).*
 <img width="777" height="303" alt="image" src="https://github.com/user-attachments/assets/f11be38e-ce66-4460-8f2c-c33466c907df" />
 
 
