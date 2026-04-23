@@ -153,3 +153,15 @@ Note: OLS models for Topic 3 and Topic 5 show no significant results. As Topic 2
 
 The model indicates that, for example, Topic 1 (Seed banks and crop varieties) is more prevalent in dialogues held in the Americas (compared to Europe), even after controlling for other variables such as country vulnerability. Topic 0, on the other hand, is more prevalent when the dialogue is organized by civil society (community organizations and social movements) compared to government institutions.
 
+## 2. Location identification
+
+In addition to the general identification of topics and the study of their prevalence, we can answer other questions. One of these concerns the places that are mentioned in the dialogues.
+
+To do this, we will use Name Entity Recognition (NER), a tool provided by the Stanford Core NLP group through the Python package, Stanza (https://stanfordnlp.github.io/stanza/). NER allows us to identify, among other things, the places mentioned in the dialogue texts (specifically, we will use the "action" entry, where the main conclusions of the dialogue are described). The places mentioned can be specific cities or countries, as well as geographical areas, such as the Amazon or the Arctic.
+
+The geopy package (https://pypi.org/project/geopy/) provides us with the coordinates of the places found and allows us to calculate the distances between them.
+
+<img width="777" height="303" alt="image" src="https://github.com/user-attachments/assets/f11be38e-ce66-4460-8f2c-c33466c907df" />
+
+
+
