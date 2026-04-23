@@ -26,7 +26,8 @@ Example: "The community assembly participants could provide support, resources, 
 
 Example: "Two months on, the Potters Village farmers' market is thriving. Held every Saturday, it features 20 local farmers selling fresh produce, baked goods, and artisanal crafts. Community volunteers help with setup and promotion. Attendance has doubled since opening day, bolstering the local economy and food security."
 
-MONITO
+<img width="931" height="386" alt="image" src="https://github.com/user-attachments/assets/1f6b5bf9-4cfc-485d-8f46-a647c2bcb1a0" />
+
 
 ## 1. Topic  Modeling
 
@@ -143,13 +144,12 @@ Results: (the constant term of the regression was omitted)
 |:--|:--|
 |continent: America|	 0.114585|
    
-|Topic 2||
-|:--|:--|
-|org_type: Social Movement|  	-0.141911|
- 
+
 |Topic 4||
 |:--|:--|
 |continent: America| 	-0.148936|
 
-Note: OLS models for Topic 3 and Topic 5 show no significant results
+Note: OLS models for Topic 3 and Topic 5 show no significant results. As Topic 2 was not labeled, we omit it from this analysis. 
+
+The model indicates that, for example, Topic 1 (Seed banks and crop varieties) is more prevalent in dialogues held in the Americas (compared to Europe), even after controlling for other variables such as country vulnerability. Topic 0, on the other hand, is more prevalent when the dialogue is organized by civil society (community organizations and social movements) compared to government institutions.
 
