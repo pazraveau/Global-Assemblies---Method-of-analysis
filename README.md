@@ -26,8 +26,7 @@ Example: "The community assembly participants could provide support, resources, 
 
 Example: "Two months on, the Potters Village farmers' market is thriving. Held every Saturday, it features 20 local farmers selling fresh produce, baked goods, and artisanal crafts. Community volunteers help with setup and promotion. Attendance has doubled since opening day, bolstering the local economy and food security."
 
-<img width="931" height="386" alt="image" src="https://github.com/user-attachments/assets/1f6b5bf9-4cfc-485d-8f46-a647c2bcb1a0" />
-
+<img width="871" height="342" alt="image" src="https://github.com/user-attachments/assets/f3d219e2-9bb7-4810-b050-e4c411879c06" />
 
 ## 1. Topic  Modeling
 
