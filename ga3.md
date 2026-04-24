@@ -30,5 +30,6 @@ Let's continue with Theme 1 as an example. First, we use the descriptive texts f
 
 Here we show in a WordCloud the results for the bigram extraction for Theme 1:
 
-<img width="485" height="533" alt="image" src="https://github.com/user-attachments/assets/4b979f02-429f-44a7-9814-0d8fe7d0a850" />
+<img width="559" height="527" alt="image" src="https://github.com/user-attachments/assets/5ecd29ed-575a-48ac-80f8-4eea7b6e89d6" />
+
 
