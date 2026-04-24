@@ -169,7 +169,7 @@ For example, Figure 4 shows the cities in which the Amazon is mentioned. The map
 <img width="777" height="303" alt="image" src="https://github.com/user-attachments/assets/f11be38e-ce66-4460-8f2c-c33466c907df" />
 
 
-## 3. Identification of vulnerable groups
+## 3. Identifying vulnerable groups
 
 Identifying references to vulnerable groups begins by establishing categories and a set of terms associated with each one.
 
