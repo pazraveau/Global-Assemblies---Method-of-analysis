@@ -2,6 +2,8 @@
 
 Based on the recommendations generated at an Assembly, the purpose of this section is to identify those issues in our participation database.
 
+# 1 Identifying dialogues
+
 To do this, we first developed a list of keywords for each of the recommendations.
 
 + Theme 1: Food Systems and Agriculture <br>
@@ -22,4 +24,11 @@ Now we search for keywords in the lemmatized texts, identifying all instances of
 
 <img width="853" height="347" alt="image" src="https://github.com/user-attachments/assets/4bd7339f-82e3-4209-a3dc-acc276cdf2cb" />
 
+# 2. Analyzing the content
+
+Let's continue with Theme 1 as an example. First, we use the descriptive texts from the dialogues that discussed Theme 1, as we saw in the previous section. Then, we extract keywords from bigrams, using either NOUN-NOUN or ADJ-NOUN patterns (using the lemmatized text).
+
+Here we show in a WordCloud the results for the bigram extraction for Theme 1:
+
+<img width="485" height="533" alt="image" src="https://github.com/user-attachments/assets/4b979f02-429f-44a7-9814-0d8fe7d0a850" />
 
