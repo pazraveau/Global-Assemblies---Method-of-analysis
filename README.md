@@ -1,4 +1,4 @@
-# Global-Assemblies---Method-of-analysis
+# Global Citizens Assembly – Map of Global Participation
 
 In this tutorial, we explain the analysis method for the Global Assemblies project. 
 
