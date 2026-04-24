@@ -2,7 +2,7 @@
 
 Based on the recommendations generated at an Assembly, the purpose of this section is to identify those issues in our participation database.
 
-# 1 Identifying dialogues
+# 1. Identifying dialogues
 
 To do this, we first developed a list of keywords for each of the recommendations.
 
