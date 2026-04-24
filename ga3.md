@@ -1,0 +1,25 @@
+
+
+Based on the recommendations generated at an Assembly, the purpose of this section is to identify those issues in our participation database.
+
+To do this, we first developed a list of keywords for each of the recommendations.
+
++ Theme 1: Food Systems and Agriculture <br>
+keywords: food waste, farmers, land, seeds, food label, agroecological, pesticides, compost, biogas, consumer awareness
+
++ Theme 2: Environment, Climate and Nature<br>
+keywords: forest, deforestation, livestock, agroforestry, habitat, conservation, food habit, consumption, food culture, beef, palm oil, cocoa, soy, consumer
+
++ Theme 3: Urban Life and the Built Environment<br>
+keywords: transport*, zoning, rooftops, mobility*, urban*, green spaces, community garden, nature spaces, food market, fresh food
+
++ Theme 4: Society, Culture and Wellbeing*<br>
+keywords: right, traditions, education, responsibility, access, legal
+
+keywords marked with asteriks (including all keywords in Theme 4) are valid only when accompanied by "green" words, such as: planet, green, food, climate, energy, sustainable, sustainability, agriculture, environment, biodiversity, ecosystem, ecology
+
+Now we search for keywords in the lemmatized texts, identifying all instances of participation whose description includes one of the keywords. The map shows the countries where at least 5 dialogues related to Theme 1 (Food Systems and Agriculture) took place.
+
+<img width="853" height="347" alt="image" src="https://github.com/user-attachments/assets/4bd7339f-82e3-4209-a3dc-acc276cdf2cb" />
+
+
