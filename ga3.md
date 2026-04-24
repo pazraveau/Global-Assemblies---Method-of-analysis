@@ -32,4 +32,18 @@ Here we show in a WordCloud the results for the bigram extraction for Theme 1:
 
 <img width="559" height="527" alt="image" src="https://github.com/user-attachments/assets/5ecd29ed-575a-48ac-80f8-4eea7b6e89d6" />
 
-
+# small
+## rural
+## woman
+### local
+#### region
+#### female  
+##### family  
+##### making  
+##### country 
+##### scale
+##### village
+##### old
+##### indigenous
+##### young
+##### urban
