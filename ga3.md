@@ -32,12 +32,15 @@ Here we show in a WordCloud the results for the bigram extraction for Theme 1:
 
 <img width="559" height="527" alt="image" src="https://github.com/user-attachments/assets/5ecd29ed-575a-48ac-80f8-4eea7b6e89d6" />
 
+# 3. Modifiers
+
+(extracting modifiers of "farmer")
+________________
 # small
 ## rural
 ## woman
 ### local
 #### region
-<h3 style="margin-bottom: 0;">Tight Heading</h3>
 #### female  
 ##### family  
 ##### making  
