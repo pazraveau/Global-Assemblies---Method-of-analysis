@@ -37,6 +37,7 @@ Here we show in a WordCloud the results for the bigram extraction for Theme 1:
 ## woman
 ### local
 #### region
+<h3 style="margin-bottom: 0;">Tight Heading</h3>
 #### female  
 ##### family  
 ##### making  
