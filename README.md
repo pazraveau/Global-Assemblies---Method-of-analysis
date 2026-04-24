@@ -6,5 +6,5 @@ In this tutorial, we explain the analysis method for the Global Assemblies proje
 
 + The second part presents a review of citizen participation data gathered during 2025.
 
-+ Finally ...
++ Finally, and based on the recommendations generated at a recent Assembly, we identify those issues in our participation database, and analyze their contents.
 
