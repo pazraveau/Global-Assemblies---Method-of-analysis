@@ -35,7 +35,7 @@ Here we show in a WordCloud the results for the bigram extraction for Theme 1:
 # 3. Modifiers
 
 (extracting modifiers of "farmer")
-________________
+___
 # small
 ## rural
 ## woman
@@ -51,3 +51,4 @@ ________________
 ##### indigenous
 ##### young
 ##### urban
+___
