@@ -38,7 +38,8 @@ Given that we have keywords, another strategy for analyzing content involves ext
 
 Modifiers of "farmer" (subset, font size proportional to word frequency): 
 
-<img width="325" height="346" alt="image" src="https://github.com/user-attachments/assets/646df33a-420c-4ab3-a8bc-8e45e23c96ca" />
+<img width="273" height="325" alt="image" src="https://github.com/user-attachments/assets/1b0bd2ca-db9d-4937-a84a-9429d7e2f152" />
+
 
 
 Modifers are nouns or adjectives that have dependedency to a given word, in this case, "farmer". So, the item "rural" in this list should be read as, for example: "rural farmer (s)" (we include the plural because the text was lemmatized).
