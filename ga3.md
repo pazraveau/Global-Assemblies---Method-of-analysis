@@ -46,7 +46,7 @@ Modifers are nouns or adjectives that have dependedency to a given word, in this
 
 Conjugates of "farmer" (subset):
 
-<img width="673" height="188" alt="image" src="https://github.com/user-attachments/assets/8baeb8a0-f245-4aaa-a4ca-02390ea325e0" />
+<img width="704" height="176" alt="image" src="https://github.com/user-attachments/assets/5a12df1e-1824-43db-b5bc-d91ff3b7e8b6" />
 
 
 agronomist society <br>
