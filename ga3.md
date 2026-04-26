@@ -35,6 +35,9 @@ Here we show in a WordCloud the results for the bigram extraction for Theme 1:
 # 3. Modifiers
 
 (extracting modifiers of "farmer")
+
+<img width="109" height="336" alt="image" src="https://github.com/user-attachments/assets/78afe4cd-27b6-48eb-89b0-7df77f28338b" />
+
 ___
 # small
 ## rural
