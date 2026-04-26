@@ -45,27 +45,27 @@ Modifers are nouns or adjectives that have dependedency to a given word, in this
 Conjugates of "farmer" (subset):
 
 
-agronomist society
-black community
-business community
-civil society
-community leader
-cooperative
-employer
-entrepreneur
-family farmer
-government agency
-indigenous community
-industry
-information exchange
-ngo
-producer
-public official
-researcher
-rural development
-state institution
-trade union
-transporter
-youth organization
+agronomist society <br>
+black community<br>
+business community<br>
+civil society<br>
+community leader<br>
+cooperative<br>
+employer<br>
+entrepreneur<br>
+family farmer<br>
+government agency<br>
+indigenous community<br>
+industry<br>
+information exchange<br>
+ngo<br>
+producer<br>
+public official<br>
+researcher<br>
+rural development<br>
+state institution<br>
+trade union<br>
+transporter<br>
+youth organization<br>
 
 
