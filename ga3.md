@@ -46,6 +46,6 @@ Conjugates of "farmer" (subset):
 
 <img width="704" height="176" alt="image" src="https://github.com/user-attachments/assets/5a12df1e-1824-43db-b5bc-d91ff3b7e8b6" />
 
-Conjugated nouns are nouns that have the same hierarchy as the target word. They can be read with an "and" or a comma (",") in relation to the keyword. For example, the item "indigenous community" is contained in the sentence: "The Council is made up of representatives of the President of the Republic and other entities and agencies of the National Government working on related issues, representatives of agricultural sector guilds and representatives of peasant organizations, black communities, indigenous communities, smallholder farmers, agronomist and veterinary societies. 
+Conjugated nouns are nouns that have the same hierarchy as the target word. They can be read with an "and" or a comma (",") in relation to the keyword. For example, the item "indigenous community" is contained in the sentence: "*The Council is made up of representatives of the President of the Republic and other entities and agencies of the National Government working on related issues, representatives of agricultural sector guilds and representatives of peasant organizations, black communities, indigenous communities, smallholder farmers, agronomist and veterinary societies.*" 
 
 
