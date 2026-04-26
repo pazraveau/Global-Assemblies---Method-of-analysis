@@ -34,24 +34,38 @@ Here we show in a WordCloud the results for the bigram extraction for Theme 1:
 
 # 3. Modifiers
 
-(extracting modifiers of "farmer")
+Given that we have keywords, another strategy for analyzing content involves extracting modifiers and conjugates of those keywords from the texts. To do this, we use Stanza's dependency parser. See an example below:
 
-<img width="109" height="336" alt="image" src="https://github.com/user-attachments/assets/78afe4cd-27b6-48eb-89b0-7df77f28338b" />
+Modifiers of "farmer" (subset, font size proportional to word frequency): 
 
-___
-# small
-## rural
-## woman
-### local
-#### region
-#### female  
-##### family  
-##### making  
-##### country 
-##### scale
-##### village
-##### old
-##### indigenous
-##### young
-##### urban
-___
+<img width="325" height="346" alt="image" src="https://github.com/user-attachments/assets/1a73fe46-5ed3-4d11-861e-82bd3fa3600e" />
+
+Modifers are nouns or adjectives that have dependedency to a given word, in this case, "farmer". So, the item "rural" in this list should be read as, for example: "rural farmer (s)" (we include the plural because the text was lemmatized).
+
+Conjugates of "farmer" (subset):
+
+
+agronomist society
+black community
+business community
+civil society
+community leader
+cooperative
+employer
+entrepreneur
+family farmer
+government agency
+indigenous community
+industry
+information exchange
+ngo
+producer
+public official
+researcher
+rural development
+state institution
+trade union
+transporter
+youth organization
+
+
