@@ -40,6 +40,8 @@ Modifiers of "farmer" (subset, font size proportional to word frequency):
 
 <img width="273" height="325" alt="image" src="https://github.com/user-attachments/assets/1b0bd2ca-db9d-4937-a84a-9429d7e2f152" />
 
+\\
+
 Modifers are nouns or adjectives that have dependedency to a given word, in this case, "farmer". So, the item "rural" in this list should be read as, for example: "rural farmer (s)" (we include the plural because the text was lemmatized).
 
 Conjugates of "farmer" (subset):
